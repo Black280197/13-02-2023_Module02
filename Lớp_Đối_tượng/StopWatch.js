@@ -19,7 +19,7 @@ class StopWatch {
 const count = new StopWatch();
 
 count.start();
-function selectionSort(arr) {
+/*function selectionSort(arr) {
     let currentValueNewIndex;
     for (let i = 0; i < arr.length; i++) {
         currentValueNewIndex = i;
@@ -35,6 +35,13 @@ function selectionSort(arr) {
         }
     }
     return arr;
+}*/
+function selectionSort(arr) {
+    arr.sort(function (a, b){
+        if (a > b) return 1;
+        if (a < b) return -1;
+        return 0;
+    })
 }
 
 const arr = [];
